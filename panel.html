@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Css Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+     <!-- css -->
+     <link rel="stylesheet" href="assets/style.css">
+     <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/6b27de1d69.js" crossorigin="anonymous"></script>
+      <!-- Favicon-->
+    <link href="assets/img/favicon.png" rel="icon">
+    <title>Panel</title>
+</head>
+<body>
+    <!-- Navbar inicio -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/img/APLogo.png" alt="LogoAp">
+            </a>
+            <ul class="list-group list-group-horizontal">
+                <!-- Button login-->
+                <a href="/login.html"><i class="fa-solid fa-user fa-xl text-white m-4"></i></a> 
+            </ul>
+        </div>
+      </nav>
+    <!-- Navbar Fin -->  
+
+    <!-- Barra lateral inicio -->
+  <div class="container-fluid text-center px-5 mb-5">
+    <div class="row">
+      <div class="col-2">
+           <img src="assets/img/foto-perfil.png" class="img-fluid rounded-circle bg-dark mt-5 mb-3" alt="foto-perfil">
+            <h3 class="text-dark intro">Gisela Aballay</h3>
+      </div> 
+    </div>
+    <!-- Iconos inicio-->
+    <div class="row mt-3">
+      <div class="col-2">
+        <div class="list-group" id="list-tab" role="tablist">
+            
+          <a class="list-group-item list-group-item-action list-group-item-primary active" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes">
+            <li class="fa-regular fa-thumbs-up"> Redes</li></a>
+          
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner"> 
+            <li class="fa-regular fa-image"> Banner</li></a>
+          
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-fotoPerfil-list" data-bs-toggle="list" href="#list-fotoPerfil" role="tab" aria-controls="list-fotoPerfil">
+            <li class="fa-regular fa-user"> Foto</li></a>
+
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-titulo-list" data-bs-toggle="list" href="#list-titulo" role="tab" aria-controls="list-titulo">
+            <li class="fa-solid fa-font"> Titulo</li></a>
+
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-sobreMi-list" data-bs-toggle="list" href="#list-sobreMi" role="tab" aria-controls="list-sobreMi"> 
+            <li class="fa-regular fa-file-lines"> Sobre Mi</li></a>
+          
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-skills-list" data-bs-toggle="list" href="#list-skills" role="tab" aria-controls="list-skills"> 
+            <li class="fa-sharp fa-solid fa-bars"> Skills</li></a>
+          
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-estudios-list" data-bs-toggle="list" href="#list-estudios" role="tab" aria-controls="list-estudios"> 
+            <li class="fa-solid fa-graduation-cap"> Estudios</li></a>
+
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-experiencia-list" data-bs-toggle="list" href="#list-experiencia" role="tab" aria-controls="list-experiencia"> 
+            <li class="fa-solid fa-briefcase"> Experiencia</li></a>
+
+          <a class="list-group-item list-group-item-action list-group-item-primary" id="list-portafolio-list" data-bs-toggle="list" href="#list-portafolio" role="tab" aria-controls="list-portafolio"> 
+            <li class="fa-solid fa-laptop-code"> Portafolio</li></a>
+
+        </div>
+      </div>
+      <!-- Iconos fin-->
+
+      <!-- Panel Editores inicio-->
+      <div class="col-6">
+        <div class="tab-content" id="nav-tabContent">
+          <!-- Redes -->
+          <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+            <form>
+              <div class="mb-3 px-5 text-start">
+                <label for="linkedin" class="form-label">LinkedIn</label>
+                <input type="text" class="form-control" id="linkedin">
+              </div>
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+
+              <div class="mb-3 px-5 text-start">
+                <label for="github" class="form-label">GitHub</label>
+                <input type="text" class="form-control" id="github">
+              </div>
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+
+              <div class="mb-3 px-5 text-start">
+                <label for="instagram" class="form-label">Instagram</label>
+                <input type="text" class="form-control" id="instagram">
+              </div>
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+            </form>
+          </div>
+
+          <!-- Banner -->
+          <div class="tab-pane fade" id="list-banner" role="tabpanel" 
+          aria-labelledby="list-banner-list">
+          <form>
+          <div class="mb-3 px-5 text-start">
+            <label for="banner" class="form-label">Banner</label>
+            <input class="form-control" type="file" id="banner">
+          </div>
+          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+          </form>
+         </div>
+
+         <!--Foto-Perfil -->
+         <div class="tab-pane fade" id="list-fotoPerfil" role="tabpanel" 
+         aria-labelledby="list-fotoPerfil-list">
+         <form>
+          <div class="mb-3 px-5 text-start">
+            <label for="fotoPerfil" class="form-label">Foto de Perfil</label>
+            <input class="form-control" type="file" id="fotoPerfil">
+          </div>
+          <button type="button" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn btn-danger">Eliminar</button>
+          </form>
+        </div>
+         
+          <!-- Titulo -->
+          <div class="tab-pane fade" id="list-titulo" role="tabpanel" 
+          aria-labelledby="list-titulo-list">
+          <form>
+            <div class="mb-3 px-5 text-start">
+              <label for="titulo" class="form-label">Titulo</label>
+              <textarea class="form-control" id="titulo" style="height: 100px;"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+
+          <!-- Sobre Mi -->
+          <div class="tab-pane fade" id="list-sobreMi" role="tabpanel" 
+          aria-labelledby="list-sobreMi-list">
+          <form>
+            <div class="mb-3 px-5 text-start">
+              <label for="sobreMi" class="form-label">Sobre Mi</label>
+              <textarea class="form-control" id="sobreMi" style="height: 100px;"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+
+          <!-- Skills -->
+          <div class="tab-pane fade" id="list-skills" role="tabpanel" 
+          aria-labelledby="list-skills-list">
+          <!-- Skill Uno -->
+          <form>
+            <div class="row px-5">
+            <div class="col-6 text-start">
+              <label for="skillUno" class="form-label">Skills 1</label>
+              <input type="text" class="form-control" id="skillUno">
+            </div>
+            <div class="col-6 mb-3 text-start">
+              <label for="porcentajeUno" class="form-label">Porcentaje</label>
+              <input type="text" class="form-control" id="porcentajeUno">
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+        
+          <!-- Skill Dos -->
+            <div class="row px-5 mt-3">
+            <div class="col-6 text-start">
+              <label for="skillDos" class="form-label">Skills 2</label>
+              <input type="text" class="form-control" id="skillDos">
+            </div>
+            <div class="col-6 mb-3 text-start">
+              <label for="porcentajeDos" class="form-label">Porcentaje</label>
+              <input type="text" class="form-control" id="porcentajeDos">
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+
+            <!-- Skill Tres -->
+            <div class="row px-5 mt-3">
+              <div class="col-6 text-start">
+                <label for="skillTres" class="form-label">Skills 3</label>
+                <input type="text" class="form-control" id="skillTres">
+              </div>
+              <div class="col-6 mb-3 text-start">
+                <label for="porcentajeTres" class="form-label">Porcentaje</label>
+                <input type="text" class="form-control" id="porcentajeTres">
+              </div>
+              </div>
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+
+            <!-- Skill Cuatro -->
+            <div class="row px-5 mt-3">
+              <div class="col-6 text-start">
+                <label for="skillCuatro" class="form-label">Skills 4</label>
+                <input type="text" class="form-control" id="skillCuatro">
+              </div>
+              <div class="col-6 mb-3 text-start">
+                <label for="porcentajeCuatro" class="form-label">Porcentaje</label>
+                <input type="text" class="form-control" id="porcentajeCuatro">
+              </div>
+              </div>
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
+          </form>
+        </div>
+
+          <!-- Estudios -->
+          <div class="tab-pane fade" id="list-estudios" role="tabpanel" 
+          aria-labelledby="list-estudios-list">
+          <form>
+            <div class="mb-3 px-5 text-start">
+              <label for="estudios" class="form-label">Estudios</label>
+              <textarea class="form-control" id="estudios" style="height: 100px;"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+
+          <!-- Experiencia -->
+          <div class="tab-pane fade" id="list-experiencia" role="tabpanel" 
+          aria-labelledby="list-experiencia-list">
+          <form>
+            <div class="mb-3 px-5 text-start">
+              <label for="experiencia" class="form-label">Experiencia</label>
+              <textarea class="form-control" id="experiencia" style="height: 100px;"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+            </form>
+        </div>
+
+          <!-- Portafolio -->
+          <div class="tab-pane fade" id="list-portafolio" role="tabpanel" 
+          aria-labelledby="list-portafolio-list">
+          <form>
+          <!-- Proyecto Uno -->
+          <div class="row px-5 mt-3">
+            <div class="col-5 text-start">
+              <label for="proyectoUno" class="form-label">Proyecto 1</label>
+              <input class="form-control" type="file" id="proyectoUno">
+            </div>
+            <div class="col-4 mb-3 text-start">
+              <label for="tituloUno" class="form-label">Titulo</label>
+              <input type="text" class="form-control" id="tituloUno">
+            </div>
+            <div class="col-3 mb-3 text-start">
+              <label for="enlaceUno" class="form-label">Enlace</label>
+              <input type="text" class="form-control" id="enlaceUno">
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+
+          <!-- Proyecto Dos -->
+          <div class="row px-5 mt-3">
+            <div class="col-5 text-start">
+              <label for="proyectoDos" class="form-label">Proyecto 2</label>
+              <input class="form-control" type="file" id="proyectoDos">
+            </div>
+            <div class="col-4 mb-3 text-start">
+              <label for="tituloDos" class="form-label">Titulo</label>
+              <input type="text" class="form-control" id="tituloDos">
+            </div>
+            <div class="col-3 mb-3 text-start">
+              <label for="enlaceDos" class="form-label">Enlace</label>
+              <input type="text" class="form-control" id="enlaceDos">
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+
+          <!-- Proyecto Tres -->
+          <div class="row px-5 mt-3">
+            <div class="col-5 text-start">
+              <label for="proyectoTres" class="form-label">Proyecto 3</label>
+              <input class="form-control" type="file" id="proyectoTres">
+            </div>
+            <div class="col-4 mb-3 text-start">
+              <label for="tituloTres" class="form-label">Titulo</label>
+              <input type="text" class="form-control" id="tituloTres">
+            </div>
+            <div class="col-3 mb-3 text-start">
+              <label for="enlaceTres" class="form-label">Enlace</label>
+              <input type="text" class="form-control" id="enlaceTres">
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-danger">Eliminar</button>
+
+        </form>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Panel Editores fin-->
+  </div>
+  <!-- Barra lateral fin -->
+    
+
+   <!-- Footer Inicio-->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Gisela Aballay</strong>. Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+    <!-- Js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
